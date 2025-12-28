@@ -1,1 +1,95 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dunner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop playsinline id="background-video">
+        <source src="assets/background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="outer-container">
+        <div class="container" id="container">
+            <div class="profile-header-row">
+                <div class="profile-left">
+                    <img src="assets/pfp.jpg" alt="Profile Picture" class="profile-img" />
+                </div>
+                <div class="profile-middle">
+                    <h1 class="username">dunnerbird</h1>
+                    <div class="typewriter-container">
+                        <span id="typewriter"></span>
+                    </div>
+                </div>
+                <div class="profile-right">
+                    <div class="image-buttons">
+                        <button class="image-button" onclick="toggleSocials('section1')">
+                            <img src="assets/elaina chibi.jpg" alt="Social Media Icon of Elaina (Fictional Anime Character)">
+                            <p>Social Media</p>
+                        </button>
+                        <button class="image-button" onclick="toggleSocials('section2')">
+                            <img src="assets/frieren chibi.jpg" alt="About Me Icon of Frieren (Fictional Character)">
+                            <p>About Me</p>
+                        </button>
+                        <button class="image-button" onclick="toggleSocials('section3')">
+                            <img src="assets/marin chibi.jpg" alt="Likes Icon of Marin (Fictional Anime Character)">
+                            <p>Stuff I like</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of container-->
+        <div id="expansion">
+            <section id="section1" class="socials-extension inactive">
+                <ul id="icons03" class="icons">
+                    <li>
+                        <a href="https://www.instagram.com/ttvdunnerbird/" target="_blank" aria-label="Instagram">
+                            <svg>
+                                <use xlink:href="icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@dunnerbird" target="_blank" aria-label="TikTok">
+                            <svg>
+                                <use xlink:href="icons.svg#icon-tiktok"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://discord.com/users/412700875824300032" target="_blank" aria-label="Discord">
+                            <svg>
+                                <use xlink:href="icons.svg#icon-discord"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://anilist.co/user/gothgirlfnatic/" target="_blank" aria-label="AniList">
+                            <svg>
+                                <use xlink:href="icons.svg#icon-anilist"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://steamcommunity.com/id/nakanomikugaming/" target="_blank" aria-label="Steam">
+                            <svg>
+                                <use xlink:href="icons.svg#icon-steam"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section id="section2" class="socials-extension inactive">
+                <p>Hi, I'm Nathan. I go by a couple usernames: Dunner, Dunnerbird, morfeene, reisen, gothgirlfnatic, FemboySniffer. Currently a student with CS intrests. Feel free to add me on Discord! mrow</p>
+            </section>
+            <section id="section3" class="socials-extension inactive">
+                <p>Technology: Game Systems, PC's, and retro/2000's era tech | Games: Riot Games, Umamusume, Eroge, and Atlus. | Anime: just look at my anilist lol | Productivity | Esports</p>
+            </section>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
