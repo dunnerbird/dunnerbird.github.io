@@ -1,2 +1,2 @@
 # website
-website for professional stuff
+website with all my links and biz
