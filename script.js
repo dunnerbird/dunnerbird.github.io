@@ -25,7 +25,7 @@ function toggleSocials(id) {
 }
 
 // tilt effect
-const tiltTargets = ['container', 'music-wrapper', 'expansion'];
+const tiltTargets = ['container', 'expansion'];
 let mouseX = 0, mouseY = 0;
 
 tiltTargets.forEach(id => {
